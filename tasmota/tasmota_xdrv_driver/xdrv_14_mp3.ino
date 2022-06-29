@@ -361,7 +361,7 @@ bool MP3PlayerCmd(void)
         } else 
         {
           MP3_CMD(MP3_CMD_PLAY, 0);
-          Response_P(S_JSON_MP3_COMMAND, command, XdrvMailbox.payload)
+          Response_P(S_JSON_MP3_COMMAND, command, XdrvMailbox.payload);
         }
         break;
 #endif // USE_DY_SV17F
